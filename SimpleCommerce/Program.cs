@@ -14,12 +14,32 @@ namespace SimpleCommerce
             Prod_Serv s = new Prod_Serv();
             Prod_Fisico f = new Prod_Fisico();
             Pagamento P = new Pagamento();
+            Logistica log = new Logistica();
+
+
+
+            Endereco end = new Endereco();
+            end.cidade = "Sao teste";
+            end.bairro = "Capao do teste";
+            end.rua = "Avenida teste";
+
+            Cliente cli = new Cliente();
+            cli.cpf = 1235;
+            cli.email = "teste@teste.com";
+            cli.nome = "Roberium";
+
+            Ordem ord = new Ordem();
+
+
+
+
+
 
             //TEST Prod_Digi
-           /* d.Nome = "TesteDigi";
-            d.Fornecedor = "FornecStore";
-            d.Preco = 2500.00;
-            */
+             d.Nome = "TesteDigi";
+             d.Fornecedor = "FornecStore";
+             d.Preco = 2500.00;
+
 
             //DEBUG
             /*Console.WriteLine(d.Nome);
@@ -57,8 +77,12 @@ namespace SimpleCommerce
             Console.WriteLine(a.Quantidade);
             */
 
-            Console.WriteLine(P.Pagar(d));
+            ord.NotaFiscal(cli, d);
+            //log.send(cli, end);
+
+            //Console.WriteLine(P.Pagar(d));
             Console.ReadKey();
+
 
         }
     }

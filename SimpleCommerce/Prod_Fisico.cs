@@ -13,8 +13,6 @@ namespace SimpleCommerce
         public override string Fornecedor { get; set; }
         public override int Quantidade { get; set; }
 
-        
-
 
     }
 }
