@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="IProdutos.cs" />
     <Compile Include="AbsProdutos.cs" />
+    <Compile Include="Pagamento.cs" />
     <Compile Include="Prod_Digi.cs" />
     <Compile Include="Prod_Fisico.cs" />
     <Compile Include="Prod_Serv.cs" />

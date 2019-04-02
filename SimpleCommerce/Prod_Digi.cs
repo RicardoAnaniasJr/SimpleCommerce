@@ -8,5 +8,8 @@ namespace SimpleCommerce
 {
     class Prod_Digi : AbsProdutos
     {
+        
+        public int Quantidade {get => 1; }
+        
     }
 }

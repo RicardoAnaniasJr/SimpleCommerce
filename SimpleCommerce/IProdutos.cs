@@ -8,9 +8,17 @@ namespace SimpleCommerce
 {
     interface IProdutos
     {
+        string Nome { get; set; }
         double Preco { get; set; }
         string Fornecedor { get; set; }
         int Quantidade { get; set; }
+
+
+
+        
+        bool confirmacao();
+        bool enviar();
+        bool download();
 
     }
 }
