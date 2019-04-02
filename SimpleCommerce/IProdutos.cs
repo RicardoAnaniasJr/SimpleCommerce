@@ -16,9 +16,9 @@ namespace SimpleCommerce
 
 
         
-        bool confirmacao();
-        bool enviar();
-        bool download();
+        string Confirmacao();
+        string Enviar();
+        string Download();
 
     }
 }

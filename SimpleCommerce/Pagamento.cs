@@ -11,8 +11,7 @@ namespace SimpleCommerce
         public double Pagar(IProdutos p)
         {
             double result = p.Preco * p.Quantidade;
-            return result;
-            
+            return result;            
         }
         public Pagamento() { }
     }

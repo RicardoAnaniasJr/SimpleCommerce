@@ -13,17 +13,17 @@ namespace SimpleCommerce
         public virtual int Quantidade { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public virtual string Nome { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public bool confirmacao()
+        public virtual string Confirmacao()
         {
             throw new NotImplementedException();
         }
 
-        public bool download()
+        public virtual string Download()
         {
             throw new NotImplementedException();
         }
 
-        public bool enviar()
+        public virtual string Enviar()
         {
             throw new NotImplementedException();
         }

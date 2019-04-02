@@ -8,8 +8,16 @@ namespace SimpleCommerce
 {
     class Prod_Digi : AbsProdutos
     {
-        
-        public int Quantidade {get => 1; }
-        
+        public override string Nome { get; set; }
+        public override double Preco { get; set; }
+        public override string Fornecedor { get; set; }
+        public override int Quantidade {get => 1; }
+
+        public override string Download()
+        {
+            return base.Download();
+        }
+
+
     }
 }
